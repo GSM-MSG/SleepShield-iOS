@@ -6,7 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		46017B7D2EC0D10C00814BE4 /* SleepShieldShieldConfiguration.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 46EE25FD2E9FDBD400364E92 /* SleepShieldShieldConfiguration.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		460A54732E9B8F2500DFB79E /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460A54722E9B8F2500DFB79E /* DeviceActivity.framework */; };
+		460A547B2E9B8F2500DFB79E /* SleepShieldDeviceActivityMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 460A54712E9B8F2400DFB79E /* SleepShieldDeviceActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		468BFEAD2EB779ED00BAE297 /* AmplitudeSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 468BFEAC2EB779ED00BAE297 /* AmplitudeSwift */; };
+		468BFEB12EB783B100BAE297 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 468BFEB02EB783B100BAE297 /* FirebaseAnalytics */; };
+		468BFEB32EB783B100BAE297 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 468BFEB22EB783B100BAE297 /* FirebaseCore */; };
+		468BFEB52EB783B100BAE297 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 468BFEB42EB783B100BAE297 /* FirebaseCrashlytics */; };
+		468BFEB72EB783B100BAE297 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 468BFEB62EB783B100BAE297 /* FirebaseRemoteConfig */; };
+		46E981582E93C904009C89B1 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E981572E93C904009C89B1 /* WidgetKit.framework */; };
+		46E9815A2E93C904009C89B1 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E981592E93C904009C89B1 /* SwiftUI.framework */; };
+		46E9816B2E93C906009C89B1 /* SleepShieldWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 46E981552E93C904009C89B1 /* SleepShieldWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46EE25FF2E9FDBD400364E92 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EE25FE2E9FDBD400364E92 /* ManagedSettings.framework */; };
+		46EE26012E9FDBD400364E92 /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EE26002E9FDBD400364E92 /* ManagedSettingsUI.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		460A54792E9B8F2500DFB79E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46CE196C2E7EECB200D1EA1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 460A54702E9B8F2400DFB79E;
+			remoteInfo = SleepShieldDeviceActivityMonitor;
+		};
 		46CE19822E7EECB400D1EA1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46CE196C2E7EECB200D1EA1C /* Project object */;
@@ -21,17 +44,117 @@
 			remoteGlobalIDString = 46CE19732E7EECB200D1EA1C;
 			remoteInfo = SleepShield;
 		};
+		46E981692E93C906009C89B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46CE196C2E7EECB200D1EA1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46E981542E93C904009C89B1;
+			remoteInfo = SleepShieldWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		46E981702E93C906009C89B1 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				46017B7D2EC0D10C00814BE4 /* SleepShieldShieldConfiguration.appex in Embed Foundation Extensions */,
+				46E9816B2E93C906009C89B1 /* SleepShieldWidgetExtension.appex in Embed Foundation Extensions */,
+				460A547B2E9B8F2500DFB79E /* SleepShieldDeviceActivityMonitor.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		460A54712E9B8F2400DFB79E /* SleepShieldDeviceActivityMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SleepShieldDeviceActivityMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		460A54722E9B8F2500DFB79E /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
 		46CE19742E7EECB200D1EA1C /* SleepShield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SleepShield.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CE19812E7EECB400D1EA1C /* SleepShieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepShieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CE198B2E7EECB400D1EA1C /* SleepShieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SleepShieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E981552E93C904009C89B1 /* SleepShieldWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SleepShieldWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E981572E93C904009C89B1 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		46E981592E93C904009C89B1 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		46EE25FD2E9FDBD400364E92 /* SleepShieldShieldConfiguration.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SleepShieldShieldConfiguration.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		46EE25FE2E9FDBD400364E92 /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
+		46EE26002E9FDBD400364E92 /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		46017B8C2EC89DC800814BE4 /* Exceptions for "SleepShield" folder in "SleepShieldWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Sources/SleepTimelineEditor/SleepTimelineAlarmMetadata.swift,
+			);
+			target = 46E981542E93C904009C89B1 /* SleepShieldWidgetExtension */;
+		};
+		460A547F2E9B8F2500DFB79E /* Exceptions for "SleepShieldDeviceActivityMonitor" folder in "SleepShieldDeviceActivityMonitor" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 460A54702E9B8F2400DFB79E /* SleepShieldDeviceActivityMonitor */;
+		};
+		460A54832E9B902C00DFB79E /* Exceptions for "SleepShield" folder in "SleepShieldDeviceActivityMonitor" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Sources/AppBlocking/FamilyActivitySelectionStore/FamilyActivitySelectionStore.swift,
+				"Sources/AppBlocking/FamilyActivitySelectionStore/FamilyActivitySelectionStore+UserDefaults.swift",
+				"Sources/ManagedSettingsStoreName/ManagedSettingStore+sleepShieldMonitor.swift",
+			);
+			target = 460A54702E9B8F2400DFB79E /* SleepShieldDeviceActivityMonitor */;
+		};
+		46E981502E93C47B009C89B1 /* Exceptions for "SleepShield" folder in "SleepShield" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Support/Firebase/GoogleService-Info.plist",
+				"Support/Firebase/GoogleService-QA-Info.plist",
+				Support/Info.plist,
+			);
+			target = 46CE19732E7EECB200D1EA1C /* SleepShield */;
+		};
+		46E9816F2E93C906009C89B1 /* Exceptions for "SleepShieldWidget" folder in "SleepShieldWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 46E981542E93C904009C89B1 /* SleepShieldWidgetExtension */;
+		};
+		46E981742E93CD33009C89B1 /* Exceptions for "SleepShieldWidget" folder in "SleepShield" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AlarmAppIntents.swift,
+			);
+			target = 46CE19732E7EECB200D1EA1C /* SleepShield */;
+		};
+		46EE260D2E9FDBD400364E92 /* Exceptions for "SleepShieldShieldConfiguration" folder in "SleepShieldShieldConfiguration" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 46EE25FC2E9FDBD400364E92 /* SleepShieldShieldConfiguration */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		460A54742E9B8F2500DFB79E /* SleepShieldDeviceActivityMonitor */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				460A547F2E9B8F2500DFB79E /* Exceptions for "SleepShieldDeviceActivityMonitor" folder in "SleepShieldDeviceActivityMonitor" target */,
+			);
+			path = SleepShieldDeviceActivityMonitor;
+			sourceTree = "<group>";
+		};
 		46CE19762E7EECB200D1EA1C /* SleepShield */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				46E981502E93C47B009C89B1 /* Exceptions for "SleepShield" folder in "SleepShield" target */,
+				46017B8C2EC89DC800814BE4 /* Exceptions for "SleepShield" folder in "SleepShieldWidgetExtension" target */,
+				460A54832E9B902C00DFB79E /* Exceptions for "SleepShield" folder in "SleepShieldDeviceActivityMonitor" target */,
+			);
 			path = SleepShield;
 			sourceTree = "<group>";
 		};
@@ -45,13 +168,43 @@
 			path = SleepShieldUITests;
 			sourceTree = "<group>";
 		};
+		46E9815B2E93C904009C89B1 /* SleepShieldWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				46E981742E93CD33009C89B1 /* Exceptions for "SleepShieldWidget" folder in "SleepShield" target */,
+				46E9816F2E93C906009C89B1 /* Exceptions for "SleepShieldWidget" folder in "SleepShieldWidgetExtension" target */,
+			);
+			path = SleepShieldWidget;
+			sourceTree = "<group>";
+		};
+		46EE26022E9FDBD400364E92 /* SleepShieldShieldConfiguration */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				46EE260D2E9FDBD400364E92 /* Exceptions for "SleepShieldShieldConfiguration" folder in "SleepShieldShieldConfiguration" target */,
+			);
+			path = SleepShieldShieldConfiguration;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		460A546E2E9B8F2400DFB79E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460A54732E9B8F2500DFB79E /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46CE19712E7EECB200D1EA1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468BFEB12EB783B100BAE297 /* FirebaseAnalytics in Frameworks */,
+				468BFEB52EB783B100BAE297 /* FirebaseCrashlytics in Frameworks */,
+				468BFEB32EB783B100BAE297 /* FirebaseCore in Frameworks */,
+				468BFEAD2EB779ED00BAE297 /* AmplitudeSwift in Frameworks */,
+				468BFEB72EB783B100BAE297 /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +222,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46E981522E93C904009C89B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46E9815A2E93C904009C89B1 /* SwiftUI.framework in Frameworks */,
+				46E981582E93C904009C89B1 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46EE25FA2E9FDBD400364E92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46EE25FF2E9FDBD400364E92 /* ManagedSettings.framework in Frameworks */,
+				46EE26012E9FDBD400364E92 /* ManagedSettingsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,8 +247,12 @@
 			isa = PBXGroup;
 			children = (
 				46CE19762E7EECB200D1EA1C /* SleepShield */,
+				460A54742E9B8F2500DFB79E /* SleepShieldDeviceActivityMonitor */,
+				46EE26022E9FDBD400364E92 /* SleepShieldShieldConfiguration */,
+				46E9815B2E93C904009C89B1 /* SleepShieldWidget */,
 				46CE19842E7EECB400D1EA1C /* SleepShieldTests */,
 				46CE198E2E7EECB400D1EA1C /* SleepShieldUITests */,
+				46E981562E93C904009C89B1 /* Frameworks */,
 				46CE19752E7EECB200D1EA1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,30 +263,77 @@
 				46CE19742E7EECB200D1EA1C /* SleepShield.app */,
 				46CE19812E7EECB400D1EA1C /* SleepShieldTests.xctest */,
 				46CE198B2E7EECB400D1EA1C /* SleepShieldUITests.xctest */,
+				46E981552E93C904009C89B1 /* SleepShieldWidgetExtension.appex */,
+				460A54712E9B8F2400DFB79E /* SleepShieldDeviceActivityMonitor.appex */,
+				46EE25FD2E9FDBD400364E92 /* SleepShieldShieldConfiguration.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		46E981562E93C904009C89B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46E981572E93C904009C89B1 /* WidgetKit.framework */,
+				46E981592E93C904009C89B1 /* SwiftUI.framework */,
+				460A54722E9B8F2500DFB79E /* DeviceActivity.framework */,
+				46EE25FE2E9FDBD400364E92 /* ManagedSettings.framework */,
+				46EE26002E9FDBD400364E92 /* ManagedSettingsUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		46CE19732E7EECB200D1EA1C /* SleepShield */ = {
+		460A54702E9B8F2400DFB79E /* SleepShieldDeviceActivityMonitor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46CE19952E7EECB400D1EA1C /* Build configuration list for PBXNativeTarget "SleepShield" */;
+			buildConfigurationList = 460A547E2E9B8F2500DFB79E /* Build configuration list for PBXNativeTarget "SleepShieldDeviceActivityMonitor" */;
 			buildPhases = (
-				46CE19702E7EECB200D1EA1C /* Sources */,
-				46CE19712E7EECB200D1EA1C /* Frameworks */,
-				46CE19722E7EECB200D1EA1C /* Resources */,
+				460A546D2E9B8F2400DFB79E /* Sources */,
+				460A546E2E9B8F2400DFB79E /* Frameworks */,
+				460A546F2E9B8F2400DFB79E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				460A54742E9B8F2500DFB79E /* SleepShieldDeviceActivityMonitor */,
+			);
+			name = SleepShieldDeviceActivityMonitor;
+			packageProductDependencies = (
+			);
+			productName = SleepShieldDeviceActivityMonitor;
+			productReference = 460A54712E9B8F2400DFB79E /* SleepShieldDeviceActivityMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		46CE19732E7EECB200D1EA1C /* SleepShield */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46CE19952E7EECB400D1EA1C /* Build configuration list for PBXNativeTarget "SleepShield" */;
+			buildPhases = (
+				46CE19702E7EECB200D1EA1C /* Sources */,
+				46CE19712E7EECB200D1EA1C /* Frameworks */,
+				46017B7A2EC0CB5600814BE4 /* Firebase Info Configure */,
+				46CE19722E7EECB200D1EA1C /* Resources */,
+				46E981702E93C906009C89B1 /* Embed Foundation Extensions */,
+				46017B792EC0CB1F00814BE4 /* Firebase Crashlytics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46E9816A2E93C906009C89B1 /* PBXTargetDependency */,
+				460A547A2E9B8F2500DFB79E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
 				46CE19762E7EECB200D1EA1C /* SleepShield */,
 			);
 			name = SleepShield;
 			packageProductDependencies = (
+				468BFEAC2EB779ED00BAE297 /* AmplitudeSwift */,
+				468BFEB02EB783B100BAE297 /* FirebaseAnalytics */,
+				468BFEB22EB783B100BAE297 /* FirebaseCore */,
+				468BFEB42EB783B100BAE297 /* FirebaseCrashlytics */,
+				468BFEB62EB783B100BAE297 /* FirebaseRemoteConfig */,
 			);
 			productName = SleepShield;
 			productReference = 46CE19742E7EECB200D1EA1C /* SleepShield.app */;
@@ -163,6 +385,50 @@
 			productReference = 46CE198B2E7EECB400D1EA1C /* SleepShieldUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		46E981542E93C904009C89B1 /* SleepShieldWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46E9816C2E93C906009C89B1 /* Build configuration list for PBXNativeTarget "SleepShieldWidgetExtension" */;
+			buildPhases = (
+				46E981512E93C904009C89B1 /* Sources */,
+				46E981522E93C904009C89B1 /* Frameworks */,
+				46E981532E93C904009C89B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				46E9815B2E93C904009C89B1 /* SleepShieldWidget */,
+			);
+			name = SleepShieldWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = SleepShieldWidgetExtension;
+			productReference = 46E981552E93C904009C89B1 /* SleepShieldWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		46EE25FC2E9FDBD400364E92 /* SleepShieldShieldConfiguration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46EE260C2E9FDBD400364E92 /* Build configuration list for PBXNativeTarget "SleepShieldShieldConfiguration" */;
+			buildPhases = (
+				46EE25F92E9FDBD400364E92 /* Sources */,
+				46EE25FA2E9FDBD400364E92 /* Frameworks */,
+				46EE25FB2E9FDBD400364E92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				46EE26022E9FDBD400364E92 /* SleepShieldShieldConfiguration */,
+			);
+			name = SleepShieldShieldConfiguration;
+			packageProductDependencies = (
+			);
+			productName = SleepShieldShieldConfiguration;
+			productReference = 46EE25FD2E9FDBD400364E92 /* SleepShieldShieldConfiguration.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -173,6 +439,9 @@
 				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
+					460A54702E9B8F2400DFB79E = {
+						CreatedOnToolsVersion = 26.0;
+					};
 					46CE19732E7EECB200D1EA1C = {
 						CreatedOnToolsVersion = 26.0;
 					};
@@ -183,6 +452,12 @@
 					46CE198A2E7EECB400D1EA1C = {
 						CreatedOnToolsVersion = 26.0;
 						TestTargetID = 46CE19732E7EECB200D1EA1C;
+					};
+					46E981542E93C904009C89B1 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					46EE25FC2E9FDBD400364E92 = {
+						CreatedOnToolsVersion = 26.0;
 					};
 				};
 			};
@@ -195,6 +470,10 @@
 			);
 			mainGroup = 46CE196B2E7EECB200D1EA1C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				468BFEAB2EB779ED00BAE297 /* XCRemoteSwiftPackageReference "Amplitude-Swift" */,
+				468BFEAF2EB783B100BAE297 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 46CE19752E7EECB200D1EA1C /* Products */;
 			projectDirPath = "";
@@ -203,11 +482,21 @@
 				46CE19732E7EECB200D1EA1C /* SleepShield */,
 				46CE19802E7EECB400D1EA1C /* SleepShieldTests */,
 				46CE198A2E7EECB400D1EA1C /* SleepShieldUITests */,
+				46E981542E93C904009C89B1 /* SleepShieldWidgetExtension */,
+				460A54702E9B8F2400DFB79E /* SleepShieldDeviceActivityMonitor */,
+				46EE25FC2E9FDBD400364E92 /* SleepShieldShieldConfiguration */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		460A546F2E9B8F2400DFB79E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46CE19722E7EECB200D1EA1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,9 +518,76 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46E981532E93C904009C89B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46EE25FB2E9FDBD400364E92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46017B792EC0CB1F00814BE4 /* Firebase Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+			);
+			name = "Firebase Crashlytics";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+		46017B7A2EC0CB5600814BE4 /* Firebase Info Configure */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Firebase Info Configure";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\nGOOGLESERVICE_INFO_STAGING=\"${PROJECT_DIR}/SleepShield/Support/Firebase/GoogleService-QA-Info.plist\"\nGOOGLESERVICE_INFO_PROD=\"${PROJECT_DIR}/SleepShield/Support/Firebase/GoogleService-Info.plist\"\n\necho \"${PROJECT_DIR}\"\n\necho \"${CONFIGURATION}\"\nif [ \"${CONFIGURATION}\" == \"Debug\" ]; then\n  cp \"${GOOGLESERVICE_INFO_STAGING}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelif [ \"${CONFIGURATION}\" == \"Release\" ]; then\n  cp \"${GOOGLESERVICE_INFO_PROD}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse\n    echo \"Error: Invalid Build Configuration. Expected 'Debug' or 'Release'.\"\n    exit 1\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		460A546D2E9B8F2400DFB79E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46CE19702E7EECB200D1EA1C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,9 +609,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46E981512E93C904009C89B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46EE25F92E9FDBD400364E92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		460A547A2E9B8F2500DFB79E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 460A54702E9B8F2400DFB79E /* SleepShieldDeviceActivityMonitor */;
+			targetProxy = 460A54792E9B8F2500DFB79E /* PBXContainerItemProxy */;
+		};
 		46CE19832E7EECB400D1EA1C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 46CE19732E7EECB200D1EA1C /* SleepShield */;
@@ -266,11 +641,76 @@
 			target = 46CE19732E7EECB200D1EA1C /* SleepShield */;
 			targetProxy = 46CE198C2E7EECB400D1EA1C /* PBXContainerItemProxy */;
 		};
+		46E9816A2E93C906009C89B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46E981542E93C904009C89B1 /* SleepShieldWidgetExtension */;
+			targetProxy = 46E981692E93C906009C89B1 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		460A547C2E9B8F2500DFB79E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SleepShieldDeviceActivityMonitor/SleepShieldDeviceActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 235C2RVZ7L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SleepShieldDeviceActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SleepShieldDeviceActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msg.SleepShield.SleepShieldDeviceActivityMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		460A547D2E9B8F2500DFB79E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SleepShieldDeviceActivityMonitor/SleepShieldDeviceActivityMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 235C2RVZ7L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SleepShieldDeviceActivityMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SleepShieldDeviceActivityMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msg.SleepShield.SleepShieldDeviceActivityMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		46CE19932E7EECB400D1EA1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 46CE19762E7EECB200D1EA1C /* SleepShield */;
+			baseConfigurationReferenceRelativePath = Support/XCConfig/Debug.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -329,12 +769,15 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		46CE19942E7EECB400D1EA1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 46CE19762E7EECB200D1EA1C /* SleepShield */;
+			baseConfigurationReferenceRelativePath = Support/XCConfig/Release.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -386,6 +829,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -395,11 +839,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SleepShield/Support/SleepShield.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 235C2RVZ7L;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SleepShield/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -417,7 +864,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -427,11 +874,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SleepShield/Support/SleepShield.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 235C2RVZ7L;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SleepShield/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,7 +899,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -538,9 +988,138 @@
 			};
 			name = Release;
 		};
+		46E9816D2E93C906009C89B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SleepShieldWidget/SleepShieldWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 235C2RVZ7L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SleepShieldWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SleepShieldWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msg.SleepShield.SleepShieldWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46E9816E2E93C906009C89B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SleepShieldWidget/SleepShieldWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 235C2RVZ7L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SleepShieldWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SleepShieldWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msg.SleepShield.SleepShieldWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46EE260A2E9FDBD400364E92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SleepShieldShieldConfiguration/SleepShieldShieldConfiguration.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 235C2RVZ7L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SleepShieldShieldConfiguration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SleepShieldShieldConfiguration;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msg.SleepShield.SleepShieldShieldConfiguration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46EE260B2E9FDBD400364E92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SleepShieldShieldConfiguration/SleepShieldShieldConfiguration.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 235C2RVZ7L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SleepShieldShieldConfiguration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SleepShieldShieldConfiguration;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.msg.SleepShield.SleepShieldShieldConfiguration;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		460A547E2E9B8F2500DFB79E /* Build configuration list for PBXNativeTarget "SleepShieldDeviceActivityMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				460A547C2E9B8F2500DFB79E /* Debug */,
+				460A547D2E9B8F2500DFB79E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		46CE196F2E7EECB200D1EA1C /* Build configuration list for PBXProject "SleepShield" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -577,7 +1156,72 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		46E9816C2E93C906009C89B1 /* Build configuration list for PBXNativeTarget "SleepShieldWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E9816D2E93C906009C89B1 /* Debug */,
+				46E9816E2E93C906009C89B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46EE260C2E9FDBD400364E92 /* Build configuration list for PBXNativeTarget "SleepShieldShieldConfiguration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46EE260A2E9FDBD400364E92 /* Debug */,
+				46EE260B2E9FDBD400364E92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		468BFEAB2EB779ED00BAE297 /* XCRemoteSwiftPackageReference "Amplitude-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/amplitude/Amplitude-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.2;
+			};
+		};
+		468BFEAF2EB783B100BAE297 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		468BFEAC2EB779ED00BAE297 /* AmplitudeSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 468BFEAB2EB779ED00BAE297 /* XCRemoteSwiftPackageReference "Amplitude-Swift" */;
+			productName = AmplitudeSwift;
+		};
+		468BFEB02EB783B100BAE297 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 468BFEAF2EB783B100BAE297 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		468BFEB22EB783B100BAE297 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 468BFEAF2EB783B100BAE297 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		468BFEB42EB783B100BAE297 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 468BFEAF2EB783B100BAE297 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		468BFEB62EB783B100BAE297 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 468BFEAF2EB783B100BAE297 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 46CE196C2E7EECB200D1EA1C /* Project object */;
 }

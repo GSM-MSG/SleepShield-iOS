@@ -1,0 +1,14 @@
+.DS_Store
+GoogleService-Info.plist
+GoogleService-QA-Info.plist
+.build/
+.DS_Store
+/.build
+xcuserdata/
+DerivedData/
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.netrc
+*/xcuserdata
+**/xcuserdata
+*.xcconfig

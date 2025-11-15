@@ -1,0 +1,33 @@
+{
+  "version": "1.10",
+  "locale": {
+    "source": "en",
+    "targets": [
+      "es",
+      "ko",
+      "ja",
+      "zh-Hans",
+      "ru",
+      "fr",
+      "de",
+      "it",
+      "ar",
+      "pt-BR",
+      "uk-UA",
+      "bn",
+      "tr",
+      "da",
+      "hi",
+      "he"
+    ]
+  },
+  "buckets": {
+    "xcode-xcstrings": {
+      "include": [
+        "SleepShield/Resources/Localizable.xcstrings",
+        "SleepShieldShieldConfiguration/Localizable.xcstrings"
+      ]
+    }
+  },
+  "$schema": "https://lingo.dev/schema/i18n.json"
+}
