@@ -109,7 +109,7 @@ extension OnboardingView {
         }
       }
 
-      private var actionTitle: String? {
+      private var actionTitle: LocalizedStringResource? {
         switch status {
         case .notDetermined:
           return "Grant permission"
@@ -120,7 +120,7 @@ extension OnboardingView {
         }
       }
 
-      private var buttonTitle: String {
+      private var buttonTitle: LocalizedStringResource {
         isRequesting ? "Requesting..." : (actionTitle ?? "")
       }
     }
