@@ -8,7 +8,7 @@ struct SettingsView: View {
   @Environment(\.openURL) private var openURL
   @Environment(\.requestReview) private var requestReview
 
-  private let supportEmail = "support@sleepshield.app"
+  private let supportEmail = "support@msg-team.com"
 
   private var appName: String {
     Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String
@@ -30,11 +30,11 @@ struct SettingsView: View {
   }
 
   private var appStoreURL: URL? {
-    URL(string: "https://apps.apple.com/app/id0000000000")
+    URL(string: "https://apps.apple.com/app/id6753810442")
   }
 
   private var shareURL: URL? {
-    URL(string: "https://msg.dev/sleepshield")
+    URL(string: "https://apps.apple.com/app/id6753810442")
   }
 
   var body: some View {
@@ -136,7 +136,7 @@ struct SettingsView: View {
   }
 
   private func contactSupport() {
-    guard let url = URL(string: "mailto:\(supportEmail)") else { return }
+    guard let url = URL(string: "mailto:\(supportEmail)?subject=[SleepShield] Feedback") else { return }
     openURL(url)
   }
 

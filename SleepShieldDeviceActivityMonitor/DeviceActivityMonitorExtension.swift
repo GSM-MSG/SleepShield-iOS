@@ -20,8 +20,8 @@ final class DeviceActivityMonitorExtension: DeviceActivityMonitor {
 
     let selection = familyActivitySelectionStore.selection
     settingsStore.shield.applications = selection.applicationTokens
-    settingsStore.shield.applicationCategories = .specific(selection.categoryTokens, except: [])
     settingsStore.shield.webDomains = selection.webDomainTokens
+    settingsStore.shield.applicationCategories = .specific(selection.categoryTokens, except: [])
     settingsStore.shield.webDomainCategories = .specific(selection.categoryTokens, except: [])
   }
 
