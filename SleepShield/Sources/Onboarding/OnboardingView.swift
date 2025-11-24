@@ -211,7 +211,12 @@ struct OnboardingView: View {
     .familyActivityPicker(
       headerText: String(localized: "Blocklist"),
       isPresented: $isPresentingFamilyPicker,
-      selection: familyActivitySelectionStore.selectionBinding
+      selection: Binding(
+        get: { familyActivitySelectionStore.selection },
+        set: { newValue in
+          familyActivitySelectionStore.updateSelection(newValue)
+        }
+      )
     )
     .alert("Screen Time Access Required", isPresented: $showFamilyAuthorizationAlert) {
       Button("OK", role: .cancel) {}

@@ -21,11 +21,11 @@ final class SleepShieldConfigurationExtension: ShieldConfigurationDataSource {
       icon: UIImage(resource: .appIconSymbol),
       title: ShieldConfiguration.Label(
         text: String(localized: "Sleep Well, Wake Refreshed"),
-        color: .white
+        color: .label
       ),
       subtitle: ShieldConfiguration.Label(
         text: String(localized: "\(application.localizedDisplayName ?? "This app") is blocked to help you\nrest now and wake up energized"),
-        color: UIColor(white: 0.9, alpha: 1.0)
+        color: .secondaryLabel
       ),
       primaryButtonLabel: ShieldConfiguration.Label(
         text: String(localized: "OK"),
@@ -44,11 +44,11 @@ final class SleepShieldConfigurationExtension: ShieldConfigurationDataSource {
       icon: UIImage(resource: .appIconSymbol),
       title: ShieldConfiguration.Label(
         text: String(localized: "Sleep Well, Wake Refreshed"),
-        color: .white
+        color: .label
       ),
       subtitle: ShieldConfiguration.Label(
         text: String(localized: "\(application.localizedDisplayName ?? "This app") is blocked to help you\nrest now and wake up energized"),
-        color: UIColor(white: 0.9, alpha: 1.0)
+        color: .secondaryLabel
       ),
       primaryButtonLabel: ShieldConfiguration.Label(
         text: String(localized: "OK"),
@@ -65,11 +65,11 @@ final class SleepShieldConfigurationExtension: ShieldConfigurationDataSource {
       icon: UIImage(resource: .appIconSymbol),
       title: ShieldConfiguration.Label(
         text: String(localized: "Sleep Well, Wake Refreshed"),
-        color: .white
+        color: .label
       ),
       subtitle: ShieldConfiguration.Label(
         text: String(localized: "\(webDomain.domain ?? "This website") is blocked to help you\nrest now and wake up energized"),
-        color: UIColor(white: 0.9, alpha: 1.0)
+        color: .secondaryLabel
       ),
       primaryButtonLabel: ShieldConfiguration.Label(
         text: String(localized: "OK"),
@@ -88,11 +88,11 @@ final class SleepShieldConfigurationExtension: ShieldConfigurationDataSource {
       icon: UIImage(resource: .appIconSymbol),
       title: ShieldConfiguration.Label(
         text: String(localized: "Sleep Well, Wake Refreshed"),
-        color: .white
+        color: .label
       ),
       subtitle: ShieldConfiguration.Label(
         text: String(localized: "\(webDomain.domain ?? "This website") is blocked to help you\nrest now and wake up energized"),
-        color: UIColor(white: 0.9, alpha: 1.0)
+        color: .secondaryLabel
       ),
       primaryButtonLabel: ShieldConfiguration.Label(
         text: String(localized: "OK"),

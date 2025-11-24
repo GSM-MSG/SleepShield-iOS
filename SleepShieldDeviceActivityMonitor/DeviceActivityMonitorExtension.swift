@@ -18,6 +18,7 @@ final class DeviceActivityMonitorExtension: DeviceActivityMonitor {
   override func intervalDidStart(for activity: DeviceActivityName) {
     super.intervalDidStart(for: activity)
 
+    familyActivitySelectionStore.refreshSelection()
     let selection = familyActivitySelectionStore.selection
     settingsStore.shield.applications = selection.applicationTokens
     settingsStore.shield.webDomains = selection.webDomainTokens
@@ -32,6 +33,7 @@ final class DeviceActivityMonitorExtension: DeviceActivityMonitor {
     settingsStore.shield.applicationCategories = nil
     settingsStore.shield.webDomains = nil
     settingsStore.shield.webDomainCategories = nil
+    settingsStore.clearAllSettings()
   }
 
   override func eventDidReachThreshold(

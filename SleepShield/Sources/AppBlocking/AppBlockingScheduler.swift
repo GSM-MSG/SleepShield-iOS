@@ -66,6 +66,32 @@ final class AppBlockingScheduler: Sendable {
     }
   }
 
+  func updateBlockingSelection(
+    for timeline: SleepTimeline,
+    selection: FamilyActivitySelection
+  ) throws {
+    guard let identifier = timeline.appBlockingIdentifier else {
+      throw Error.unexceptedNil
+    }
+    settingsStore.clearAllSettings()
+
+    let requests = makeScheduleRequests(for: timeline, identifier: identifier)
+    var startedNames: [DeviceActivityName] = []
+
+    do {
+      removePersistedSchedules(for: identifier)
+
+      for request in requests {
+        try activityCenter.startMonitoring(request.name, during: request.schedule)
+        startedNames.append(request.name)
+      }
+      persist(startedNames, for: identifier)
+    } catch {
+      activityCenter.stopMonitoring(startedNames)
+      throw error
+    }
+  }
+
   func stopBlocking(for timeline: SleepTimeline) throws {
     guard let identifier = timeline.appBlockingIdentifier else {
       throw Error.unexceptedNil

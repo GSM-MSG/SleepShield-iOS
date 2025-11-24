@@ -157,7 +157,19 @@ struct HomeView: View {
     .familyActivityPicker(
       headerText: String(localized: "Blocklist"),
       isPresented: $isPresentFamilyPicker,
-      selection: familyActivitySelectionStore.selectionBinding
+      selection: Binding(
+        get: { familyActivitySelectionStore.selection },
+        set: { newValue in
+          familyActivitySelectionStore.updateSelection(newValue)
+          if let todayTimeline {
+            do {
+              try AppBlockingScheduler.shared.updateBlockingSelection(for: todayTimeline, selection: newValue)
+            } catch {
+              assertionFailure("\(error)")
+            }
+          }
+        }
+      )
     )
     .onAppear {
       AnalyticsClient.shared.track(event: .viewHome)

@@ -37,13 +37,11 @@ final class FamilyActivitySelectionStore: ObservableObject {
     persistSelection()
   }
 
-  var selectionBinding: Binding<FamilyActivitySelection> {
-    Binding(
-      get: { self.selection },
-      set: { [weak self] newSelection in
-        guard let self else { return }
-        self.updateSelection(newSelection)
-      }
+  func refreshSelection() {
+    selection = Self.loadSelection(
+      using: defaults,
+      decoder: decoder,
+      key: defaultsKey
     )
   }
 
