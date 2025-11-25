@@ -1,3 +1,4 @@
+import MessageUI
 import StoreKit
 import SwiftUI
 
@@ -7,6 +8,7 @@ struct SettingsView: View {
   @Environment(\.dismiss) private var dismiss
   @Environment(\.openURL) private var openURL
   @Environment(\.requestReview) private var requestReview
+  @State private var showMailComposer = false
 
   private let supportEmail = "support@msg-team.com"
 
@@ -54,6 +56,9 @@ struct SettingsView: View {
           dismiss()
         }
       }
+    }
+    .sheet(isPresented: $showMailComposer) {
+      SettingsView.MailComposeView { _ in }
     }
   }
 
@@ -130,14 +135,26 @@ struct SettingsView: View {
         Image(.appIconSymbol)
           .resizable()
           .frame(width: 32, height: 32)
-          .clipShape(.rect(cornerRadius: 4))
+          .clipShape(.rect(cornerRadius: 8))
       }
     }
   }
 
   private func contactSupport() {
-    guard let url = URL(string: "mailto:\(supportEmail)?subject=[SleepShield] Feedback") else { return }
-    openURL(url)
+    let body = """
+    
+    ---
+    App Version: \(Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0.0")
+    iOS Version: \(UIDevice.current.systemVersion)
+    Device: \(UIDevice.current.model)
+    Report ID: \(AnalyticsClient.shared.getUserID()?.data(using: .utf8)?.base64EncodedString() ?? "N/A")
+    """
+    guard let url = URL(string: "mailto:\(supportEmail)?subject=[SleepShield] Feedback&body=\(body)") else { return }
+    if MFMailComposeViewController.canSendMail() {
+      showMailComposer = true
+    } else {
+      openURL(url)
+    }
   }
 
   private func rateApp() {
