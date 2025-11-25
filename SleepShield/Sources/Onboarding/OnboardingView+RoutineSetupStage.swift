@@ -413,7 +413,7 @@ extension OnboardingView {
             Text(item.symbol)
               .font(.subheadline.weight(.semibold))
               .foregroundStyle(foregroundColor(for: item.day))
-              .frame(maxWidth: .infinity, maxHeight: .infinity)
+              .frame(maxWidth: 80, maxHeight: 80)
               .aspectRatio(1.0, contentMode: .fill)
               .background(
                 Circle()
