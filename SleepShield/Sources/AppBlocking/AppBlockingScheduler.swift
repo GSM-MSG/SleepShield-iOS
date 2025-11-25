@@ -110,7 +110,6 @@ final class AppBlockingScheduler: Sendable {
     settingsStore.shield.webDomainCategories = nil
   }
 
-#if DEBUG
   func stopAllBlocking() {
     let prefix = "sleepShield.appBlocking.names."
     let keys = defaults.dictionaryRepresentation().keys.filter { $0.hasPrefix(prefix) }
@@ -120,7 +119,6 @@ final class AppBlockingScheduler: Sendable {
       defaults.removeObject(forKey: key)
     }
   }
-#endif
 
   private func makeScheduleRequests(
     for timeline: SleepTimeline,
