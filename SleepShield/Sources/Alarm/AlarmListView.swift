@@ -6,16 +6,8 @@ struct AlarmListView: View {
 
   var body: some View {
     ZStack {
-      LinearGradient(
-        colors: [
-          Color(red: 0.09, green: 0.12, blue: 0.20),
-          Color(red: 0.13, green: 0.17, blue: 0.27),
-          Color(red: 0.18, green: 0.22, blue: 0.36)
-        ],
-        startPoint: .topLeading,
-        endPoint: .bottomTrailing
-      )
-      .ignoresSafeArea()
+      Color(.systemGroupedBackground)
+        .ignoresSafeArea()
 
       if alarmScheduler.alarms.isEmpty {
         ContentUnavailableView(
